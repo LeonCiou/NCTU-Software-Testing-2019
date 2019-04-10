@@ -2,5 +2,5 @@
 Practice Junit.
 
 ## Running
-* `make`
-* `make test`
+* `$make`
+* `$make test`
