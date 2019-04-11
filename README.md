@@ -1,5 +1,4 @@
 # NCTU-Software-Testing-2019
-# NCTU-Software-Testing-2019
 
 ## Student Info
 邱肇珩
