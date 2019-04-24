@@ -16,10 +16,24 @@
 	- Return True if (size == capacity)
   
 ## Define the characteristics of the input variables. Make sure you cover all input variables.
-![GitHub](https://raw.githubusercontent.com/LeonCiou/NCTU-Software-Testing-2019/master/Mid-term%20Work%3A%20Input%20Space%20Partitioning%20for%20BoundedQueue/(b).png?token=AIHBNCY6EDG2Z7DQM5BGT5S4ZFXC6)
+![GitHub]((b).png?raw=true)
 
 ## Partition the characteristics into blocks. Designate one block in each partition as the "Base" block.
 ![Github]((c).png?raw=true)
+Base block
+For BoundedQueue: C1b1
+For enQueue: C2b1 C3b1
+For deQueue: C4b1
+For isEmpty: C5b1
+For isFull: C6b1
+
 ## Define values for each block.
+![Github]((d).png?raw=true)
 
 ## Define a test set that satisfies Base Choice Coverage (BCC). Write your tests with the values from the previous step. Be sure to include the test oracles.
+BCC :
+For BoundedQueue: C1b1, C1b2, C2b3
+For enQueue: C2b1 C3b1, C2b2 C3b1, C2b1 C3b2, C3b1 C3b3
+For deQueue: C4b1, C4b2
+For isEmpty: C5b1, C5b2
+For isFull: C6b1, C6b2
