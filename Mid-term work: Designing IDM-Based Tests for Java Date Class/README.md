@@ -1,7 +1,8 @@
 # Date class
 
 ## Determine the characteristics of Date
-- Date()
+- Date()-Allocates a Date object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond.
+
 - Date(long date)
 - boolean after(Date when)
 - boolean before(Date when)
