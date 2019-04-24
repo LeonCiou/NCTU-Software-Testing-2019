@@ -19,7 +19,7 @@
 
 ## Define the test requirements for Date
 ![Github](images/c.png?raw=true)
-C1=F: doesn’t initialize
+C1=F: doesn’t initialize  
 C2=F: doesn’t initialize
 
 ## Refine Tests for JUnit tests
