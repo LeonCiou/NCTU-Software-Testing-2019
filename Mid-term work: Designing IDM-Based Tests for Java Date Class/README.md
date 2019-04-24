@@ -10,7 +10,17 @@
 - boolean equals(Object obj) - Compares two dates for equality.
 - int compareTo(Date anotherDate) - Compares two Dates for ordering.
   - Exception: NullPointerException
+  
+### Devolop characteristics
+![Github](images/a.png?raw=true)
+
+### Relevant characteristics for each method
+![Github](images/b.png?raw=true)
 
 ## Define the test requirements for Date
+![Github](images/c.png?raw=true)
+C1=F: doesn’t initialize
+C2=F: doesn’t initialize
 
 ## Refine Tests for JUnit tests
+![Github](images/d.png?raw=true)
