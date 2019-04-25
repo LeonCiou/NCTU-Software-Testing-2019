@@ -33,7 +33,7 @@ Base block
 ## Define a test set that satisfies Base Choice Coverage (BCC). Write your tests with the values from the previous step. Be sure to include the test oracles.
 BCC :
 - For BoundedQueue: C1b1, C1b2, C1b3
-- For enQueue: C2b1 C3b1, C2b2 C3b1, C2b1 C3b2, C3b1 C3b3
+- For enQueue: C2b1 C3b1,   C2b2 C3b1,   C2b1 C3b2,   C1b1 C3b3
 - For deQueue: C4b1, C4b2
 - For isEmpty: C5b1, C5b2
 - For isFull: C6b1, C6b2
