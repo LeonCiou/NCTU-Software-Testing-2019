@@ -82,5 +82,13 @@ b(false) : false
 c(true) : 63 < 70 - 5  
 d(true) : 12 > 10  
 
-## CACC(correlated active clause coverage)
+## CACC(correlated active clause coverage)  
+### (a || (b && c)) && d  
+|                |  a  |  b  |  c  |  d  |
+|----------------|-----|-----|-----|-----|
+|P<sub>a</sub>   |  T  |  t  |  f  |  t  |
+|                |  F  |  t  |  f  |  t  |
+|P<sub>b</sub>   |
+|P<sub>c</sub>   |
 
+### b  
