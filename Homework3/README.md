@@ -1,12 +1,14 @@
 # Homework3
 For homework3, I must design tests to satisfy PC(predicates coverage), CC(clause coverage), and CACC(correlated active clause coverage) for Themostat .
 
-## PC
-First, look at Line(28-30):`if (((curTemp < dTemp - thresholdDiff) ||
+## PC(predicates coverage)
+- Look at `src/Thermostat.java`, we find out two predicates
+  - Line(28-30):(((curTemp < dTemp - thresholdDiff) ||
            (override && curTemp < overTemp - thresholdDiff)) &&
-           (timeSinceLastRun > minLag))`
+           (timeSinceLastRun > minLag))
+  - Line (34):(override)
 
-## CC
+## CC(clause coverage)
 
 
-## CACC
+## CACC(correlated active clause coverage)
