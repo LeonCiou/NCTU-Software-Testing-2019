@@ -44,7 +44,7 @@ d(true) : 12 > 10
 
 - False  
 a(true) : 63 < 69 - 5  
-b(true) : false  
+b(false) : false  
 c(true) : 63 < 70 - 5  
 d(true) : 12 > 10  
 
@@ -68,5 +68,16 @@ d(false) : 8 > 10
 - precondition: ((a || (b && c)) && d) == true  
 - two cases  
 
+- True  
+a(true) : 63 < 69 - 5  
+b(true) : true  
+c(true) : 63 < 70 - 5  
+d(true) : 12 > 10  
+
+- False  
+a(true) : 63 < 69 - 5  
+b(false) : false  
+c(true) : 63 < 70 - 5  
+d(true) : 12 > 10  
 
 ## CACC(correlated active clause coverage)
