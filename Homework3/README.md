@@ -8,8 +8,7 @@ For homework3, I must design tests to satisfy PC(predicates coverage), CC(clause
             (timeSinceLastRun > minLag))  
   - Line (34) : (override)  
 
-Simplity
-
+- Simplity  
 a : curTemp < dTemp - thresholdDiff  
 b : Override  
 c : curTemp < overTemp - thresholdDiff  
@@ -20,6 +19,9 @@ a : curTemp < dTemp - thresholdDiff
 b : Override  
 c : curTemp < overTemp - thresholdDiff  
 d : timeSinceLastRun > minLag)  
+
+- Truth table  
+![truth table (a||(b&&c)) && d](images/TF_table.png)
 
 ### (a || (b && c)) && d  
 - True  
