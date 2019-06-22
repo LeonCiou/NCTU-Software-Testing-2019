@@ -87,8 +87,9 @@ d(true) : 12 > 10
 |                |  a  |  b  |  c  |  d  |
 |----------------|-----|-----|-----|-----|
 |P<sub>a</sub>   |  T  |  t  |  f  |  t  |
-|                |  F  |  t  |  f  |  t  |
-|P<sub>b</sub>   |
+                 |  F  |  t  |  f  |  t  |
+|P<sub>b</sub>   |  f  |  T  |  t  |  t  |
+
 |P<sub>c</sub>   |
 
 ### b  
