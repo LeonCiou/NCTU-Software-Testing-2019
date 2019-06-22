@@ -28,7 +28,7 @@ b(true) : true
 c(true) : 63 < 70 - 5  
 d(true) : 12 > 10  
 
-- False
+- False  
 a(false) : 66 < 69 - 5  
 b(false) : false  
 c(false) : 63 < 67 - 5  
