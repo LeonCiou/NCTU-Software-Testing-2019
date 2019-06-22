@@ -87,9 +87,17 @@ d(true) : 12 > 10
 |                |  a  |  b  |  c  |  d  |
 |----------------|-----|-----|-----|-----|
 |P<sub>a</sub>   |  T  |  t  |  f  |  t  |
-                 |  F  |  t  |  f  |  t  |
+|                |  F  |  t  |  f  |  t  |
 |P<sub>b</sub>   |  f  |  T  |  t  |  t  |
-
-|P<sub>c</sub>   |
+|                |  f  |  F  |  t  |  t  |
+|P<sub>c</sub>   |  f  |  t  |  T  |  t  |
+|                |  f  |  t  |  F  |  t  |
+|P<sub>d</sub>   |  t  |  t  |  t  |  T  |
+|                |  t  |  t  |  t  |  F  |  
 
 ### b  
+- precondition: ((a || (b && c)) && d) == true  
+|                |  a  |  b  |  c  |  d  |
+|----------------|-----|-----|-----|-----|
+|P<sub>b</sub>   |  t  |  T  |  t  |  t  |
+|                |  t  |  F  |  t  |  t  |
