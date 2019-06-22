@@ -36,7 +36,7 @@ d(false) : 8 > 10
 
 ### b
 - precondition: ((a || (b && c)) && d) == true  
-- True
+- True  
 a(true) : 63 < 69 - 5  
 b(true) : true  
 c(true) : 63 < 70 - 5  
@@ -48,25 +48,25 @@ b(true) : false
 c(true) : 63 < 70 - 5  
 d(true) : 12 > 10  
 
-## CC(clause coverage)
-### (a || (b && c)) && d
-- two cases
+## CC(clause coverage)  
+### (a || (b && c)) && d  
+- two cases  
 
-- a = b = c = d = true
+- a = b = c = d = true  
 a(true) : 63 < 69 - 5  
 b(true) : true  
 c(true) : 63 < 70 - 5  
 d(true) : 12 > 10  
 
-- a = b = c = d = false
+- a = b = c = d = false  
 a(false) : 66 < 69 - 5  
 b(false) : false  
 c(false) : 63 < 67 - 5  
 d(false) : 8 > 10  
 
-### b
+### b  
 - precondition: ((a || (b && c)) && d) == true  
-- two cases
+- two cases  
 
 
 ## CACC(correlated active clause coverage)
