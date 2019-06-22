@@ -102,3 +102,19 @@ d(true) : 12 > 10
 |----------------|-----|-----|-----|-----|
 |P<sub>b</sub>   |  t  |  T  |  t  |  t  |
 |                |  t  |  F  |  t  |  t  |
+
+
+## The set of test cases I need  
+|         |  a  |  b  |  c  |  d  |
+|---------|-----|-----|-----|-----|
+|  case1  |  t  |  t  |  t  |  t  |
+|  case2  |  f  |  f  |  f  |  f  |
+|  case3  |  t  |  f  |  t  |  t  |
+|  case4  |  t  |  t  |  f  |  t  |
+|  case5  |  f  |  t  |  f  |  t  |
+|  case6  |  f  |  t  |  t  |  t  |
+|  case7  |  f  |  f  |  t  |  t  |
+|  case8  |  t  |  t  |  t  |  F  |
+
+
+
