@@ -15,6 +15,7 @@ b : Override
 c : curTemp < overTemp - thresholdDiff
 d : timeSinceLastRun > minLag)
 Line(28-30) : (a || (b && c)) && d
+
 Line(34) : b
 
 ## CC(clause coverage)
