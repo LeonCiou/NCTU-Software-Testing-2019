@@ -10,13 +10,12 @@ For homework3, I must design tests to satisfy PC(predicates coverage), CC(clause
 
 Simplity
 
-a : curTemp < dTemp - thresholdDiff
-b : Override
-c : curTemp < overTemp - thresholdDiff
-d : timeSinceLastRun > minLag)
-Line(28-30) : (a || (b && c)) && d
-
-Line(34) : b
+a : curTemp < dTemp - thresholdDiff  
+b : Override  
+c : curTemp < overTemp - thresholdDiff  
+d : timeSinceLastRun > minLag)  
+Line(28-30) : (a || (b && c)) && d  
+Line(34) : b  
 
 ## CC(clause coverage)
 
