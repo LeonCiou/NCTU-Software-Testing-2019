@@ -16,6 +16,37 @@ c : curTemp < overTemp - thresholdDiff
 d : timeSinceLastRun > minLag)  
 Line(28-30) : (a || (b && c)) && d  
 Line(34) : b  
+a : curTemp < dTemp - thresholdDiff  
+b : Override  
+c : curTemp < overTemp - thresholdDiff  
+d : timeSinceLastRun > minLag)  
+
+### (a || (b && c)) && d  
+- True  
+a(true) : 63 < 69 - 5  
+b(true) : true  
+c(true) : 63 < 70 - 5  
+d(true) : 12 > 10  
+
+- False
+a(false) : 66 < 69 - 5  
+b(false) : false  
+c(false) : 63 < 67 - 5  
+d(false) : 8 > 10  
+
+### b
+- precondition: ((a || (b && c)) && d) == true
+- True
+a(true) : 63 < 69 - 5  
+b(true) : true  
+c(true) : 63 < 70 - 5  
+d(true) : 12 > 10  
+
+- False  
+a(true) : 63 < 69 - 5  
+b(true) : false  
+c(true) : 63 < 70 - 5  
+d(true) : 12 > 10  
 
 ## CC(clause coverage)
 
