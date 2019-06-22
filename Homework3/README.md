@@ -21,7 +21,7 @@ c : curTemp < overTemp - thresholdDiff
 d : timeSinceLastRun > minLag)  
 
 - Truth table  
-![truth table (a||(b&&c)) && d](images/TF_table.png)
+![truth table (a||(b&&c)) && d](images/TF_table.png?raw=true)
 
 ### (a || (b && c)) && d  
 - True  
