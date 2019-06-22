@@ -107,14 +107,14 @@ d(true) : 12 > 10
 ## The set of test cases I need  
 |         |  a  |  b  |  c  |  d  |
 |---------|-----|-----|-----|-----|
-|  case1  |  t  |  t  |  t  |  t  |
-|  case2  |  f  |  f  |  f  |  f  |
-|  case3  |  t  |  f  |  t  |  t  |
-|  case4  |  t  |  t  |  f  |  t  |
-|  case5  |  f  |  t  |  f  |  t  |
-|  case6  |  f  |  t  |  t  |  t  |
-|  case7  |  f  |  f  |  t  |  t  |
-|  case8  |  t  |  t  |  t  |  F  |
+|  case1  |  T  |  T  |  F  |  T  |
+|  case2  |  F  |  T  |  F  |  T  |
+|  case3  |  F  |  T  |  T  |  T  |
+|  case4  |  F  |  F  |  T  |  T  |
+|  case5  |  T  |  T  |  T  |  T  |
+|  case6  |  T  |  T  |  T  |  F  |
+|  case7  |  F  |  F  |  F  |  F  |
+|  case8  |  T  |  F  |  T  |  T  |
 
 
 
