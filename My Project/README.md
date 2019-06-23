@@ -15,7 +15,10 @@ Line(136) : a == b
 Line(140) : a > b
 
 - Truth table  
-![truth table (a||(b&&c)) && d](images/TF_Table.png?raw=true)
+ - `a == b`  
+ ![truth table (a == b)](image/AequalB.png?raw=true)
+ -  a > b`  
+ ![truth table (a > b)](image/aLargerThanb.png?raw=true)
 
 ### (a || (b && c)) && d  
 - True  
