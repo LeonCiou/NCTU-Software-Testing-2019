@@ -17,10 +17,10 @@ Line(140) : a > b
 - Truth table  
  - `a == b`  
  ![truth table (a == b)](image/AequalB.png?raw=true)
- -  a > b`  
+ -  `a > b`  
  ![truth table (a > b)](image/aLargerThanb.png?raw=true)
 
-### (a || (b && c)) && d  
+### a == b
 - True  
 a(true) : 63 < 69 - 5  
 b(true) : true  
@@ -33,8 +33,8 @@ b(false) : false
 c(false) : 63 < 67 - 5  
 d(false) : 8 > 10  
 
-### b
-- precondition: ((a || (b && c)) && d) == true  
+### a > b
+- precondition: (a == b) == false
 - True  
 a(true) : 63 < 69 - 5  
 b(true) : true  
