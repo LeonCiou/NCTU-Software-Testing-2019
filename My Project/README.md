@@ -9,16 +9,10 @@ First, I simply introduce my project. My project is "free5gc". It is a project t
   - Line(140) : (key_size > SHA256_BLOCK_SIZE)  
 
 - Simplity  
-a : curTemp < dTemp - thresholdDiff  
-b : Override  
-c : curTemp < overTemp - thresholdDiff  
-d : timeSinceLastRun > minLag)  
-Line(28-30) : (a || (b && c)) && d  
-Line(34) : b  
-a : curTemp < dTemp - thresholdDiff  
-b : Override  
-c : curTemp < overTemp - thresholdDiff  
-d : timeSinceLastRun > minLag)  
+a : key_size  
+b : SHA256_BLOCK_SIZE  
+Line(136) : a == b  
+Line(140) : a > b
 
 - Truth table  
 ![truth table (a||(b&&c)) && d](images/TF_Table.png?raw=true)
