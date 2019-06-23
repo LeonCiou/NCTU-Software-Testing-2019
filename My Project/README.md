@@ -27,7 +27,7 @@ Line(140) : b
 a(true) : 64 == 64  
 
 - False  
-a(false) : 8 == 64  
+a(false) : 4 == 64  
 
 ### b
 - precondition: a = false  
@@ -47,7 +47,7 @@ b(false) : 4 > 64
 a(true) : 64 == 64  
 
 - False  
-a(false) : 8 == 64  
+a(false) : 4 == 64  
 
 
 ### b  
@@ -61,35 +61,25 @@ a(false) : 4 == 64
 b(false) : 4 > 64  
 
 ## CACC(correlated active clause coverage)  
-### (a || (b && c)) && d  
-|                |  a  |  b  |  c  |  d  |
-|----------------|-----|-----|-----|-----|
-|P<sub>a</sub>   |  T  |  t  |  f  |  t  |
-|                |  F  |  t  |  f  |  t  |
-|P<sub>b</sub>   |  f  |  T  |  t  |  t  |
-|                |  f  |  F  |  t  |  t  |
-|P<sub>c</sub>   |  f  |  t  |  T  |  t  |
-|                |  f  |  t  |  F  |  t  |
-|P<sub>d</sub>   |  t  |  t  |  t  |  T  |
-|                |  t  |  t  |  t  |  F  |  
+### a  
+|                |  a  |  
+|----------------|-----|  
+|P<sub>a</sub>   |  T  |  
+|                |  F  |  
 
 ### b  
-- precondition: ((a || (b && c)) && d) == true  
+- precondition: a = false  
 
-|                |  a  |  b  |  c  |  d  |
-|----------------|-----|-----|-----|-----|
-|P<sub>b</sub>   |  t  |  T  |  t  |  t  |
-|                |  t  |  F  |  t  |  t  |
+|                |  a  |  b  |  
+|----------------|-----|-----|  
+|P<sub>b</sub>   |  F  |  T  |  
+|                |  F  |  F  |  
 
 
 ## The set of test cases I need  
-|         |  a  |  b  |  c  |  d  |
-|---------|-----|-----|-----|-----|
-|  case1  |  T  |  T  |  F  |  T  |
-|  case2  |  F  |  T  |  F  |  T  |
-|  case3  |  F  |  T  |  T  |  T  |
-|  case4  |  F  |  F  |  T  |  T  |
-|  case5  |  T  |  T  |  T  |  T  |
-|  case6  |  T  |  T  |  T  |  F  |
-|  case7  |  F  |  F  |  F  |  F  |
-|  case8  |  T  |  F  |  T  |  T  |
+|         |  a  |  b  |
+|---------|-----|-----|
+|  case1  |  T  |     |
+|  case2  |  F  |  T  |
+|  case3  |  F  |  F  |
+
