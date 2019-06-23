@@ -13,6 +13,8 @@ a : key_size == SHA256_BLOCK_SIZE
 b : key_size > SHA256_BLOCK_SIZE  
 Line(136) : a   
 Line(140) : b  
+`SHA256_BLOCK_SIZE` is a fixed value.  
+`SHA256_BLOCK_SIZE = 64`  
 
 - Truth table  
  - a  
@@ -22,50 +24,41 @@ Line(140) : b
 
 ### a
 - True  
-a(true) :  
+a(true) : 64 == 64  
 
 - False  
-a(false) :  
+a(false) : 8 == 64  
 
 ### b
 - precondition: a = false  
 - True  
-b(true) :  
+a(false) : 128 == 64  
+b(true) :  128 > 64  
 
 - False  
-b(false) :   
+a(false) : 4 == 64
+b(false) : 4 > 64  
 
 ## CC(clause coverage)  
-### (a || (b && c)) && d  
-- two cases  
-
-- a = b = c = d = true  
-a(true) : 63 < 69 - 5  
-b(true) : true  
-c(true) : 63 < 70 - 5  
-d(true) : 12 > 10  
-
-- a = b = c = d = false  
-a(false) : 66 < 69 - 5  
-b(false) : false  
-c(false) : 63 < 67 - 5  
-d(false) : 8 > 10  
-
-### b  
-- precondition: ((a || (b && c)) && d) == true  
+### a
 - two cases  
 
 - True  
-a(true) : 63 < 69 - 5  
-b(true) : true  
-c(true) : 63 < 70 - 5  
-d(true) : 12 > 10  
+a(true) : 64 == 64  
 
 - False  
-a(true) : 63 < 69 - 5  
-b(false) : false  
-c(true) : 63 < 70 - 5  
-d(true) : 12 > 10  
+a(false) : 8 == 64  
+
+
+### b  
+- precondition: a = false  
+- True  
+a(false) : 128 == 64  
+b(true) :  128 > 64  
+
+- False  
+a(false) : 4 == 64
+b(false) : 4 > 64  
 
 ## CACC(correlated active clause coverage)  
 ### (a || (b && c)) && d  
