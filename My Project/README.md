@@ -2,8 +2,12 @@
 For homework3, I must design tests to satisfy PC(predicates coverage), CC(clause coverage), and CACC(correlated active clause coverage) for my own project.  
 First, I simply introduce my project. My project is "free5gc". It is a project that implements 5G core network. And it has existed some tests of its functions. However, these test cases is simple and only check of the capability of function. Hence, I can design new tests(PC, CC, CACC) to make these tests as much as possible. Because there are so many functions, I choose one of these functions to test.  
 
+## Screenshot
+- Test result  
+![test result](images/screenshot.png?raw=true)
+
 ## PC(predicates coverage)  
-- Look at `free5gc/lib/nextepc/core/src/sha2_hmac.c`. I want to test `void hmac_sha256_init(hmac_sha256_ctx *ctx, c_uint8_t *key, c_uint32_t key_size)` on line 126.  
+- Look at `src/sha2_hmac.c`. I want to test `void hmac_sha256_init(hmac_sha256_ctx *ctx, c_uint8_t *key, c_uint32_t key_size)` on line 126.  
 - we find out two predicates  
   - Line(136) : (key_size == SHA256_BLOCK_SIZE)  
   - Line(140) : (key_size > SHA256_BLOCK_SIZE)  
