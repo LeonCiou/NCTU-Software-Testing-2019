@@ -15,37 +15,25 @@ Line(136) : a
 Line(140) : b  
 
 - Truth table  
- - `a`  
+ - a  
  ![truth table (key_size == SHA256_BLOCK_SIZE)](images/1.png?raw=true)
- -  `b`  
+ - b  
  ![truth table (key_size > SHA256_BLOCK_SIZE)](images/2.png?raw=true)
 
 ### a
 - True  
-a(true) : 63 < 69 - 5  
-b(true) : true  
-c(true) : 63 < 70 - 5  
-d(true) : 12 > 10  
+a(true) :  
 
 - False  
-a(false) : 66 < 69 - 5  
-b(false) : false  
-c(false) : 63 < 67 - 5  
-d(false) : 8 > 10  
+a(false) :  
 
 ### b
-- precondition: (a == b) == false
+- precondition: a = false  
 - True  
-a(true) : 63 < 69 - 5  
-b(true) : true  
-c(true) : 63 < 70 - 5  
-d(true) : 12 > 10  
+b(true) :  
 
 - False  
-a(true) : 63 < 69 - 5  
-b(false) : false  
-c(true) : 63 < 70 - 5  
-d(true) : 12 > 10  
+b(false) :   
 
 ## CC(clause coverage)  
 ### (a || (b && c)) && d  
