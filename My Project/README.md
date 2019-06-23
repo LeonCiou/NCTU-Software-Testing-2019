@@ -9,18 +9,18 @@ First, I simply introduce my project. My project is "free5gc". It is a project t
   - Line(140) : (key_size > SHA256_BLOCK_SIZE)  
 
 - Simplity  
-a : key_size  
-b : SHA256_BLOCK_SIZE  
-Line(136) : a == b  
-Line(140) : a > b
+a : key_size == SHA256_BLOCK_SIZE   
+b : key_size > SHA256_BLOCK_SIZE  
+Line(136) : a   
+Line(140) : b  
 
 - Truth table  
- - `a == b`  
- ![truth table (a == b)](image/AequalB.png?raw=true)
- -  `a > b`  
- ![truth table (a > b)](image/aLargerThanb.png?raw=true)
+ - `a`  
+ ![truth table (key_size == SHA256_BLOCK_SIZE)](image/1.png?raw=true)
+ -  `b`  
+ ![truth table (key_size > SHA256_BLOCK_SIZE)](image/2.png?raw=true)
 
-### a == b
+### a
 - True  
 a(true) : 63 < 69 - 5  
 b(true) : true  
@@ -33,7 +33,7 @@ b(false) : false
 c(false) : 63 < 67 - 5  
 d(false) : 8 > 10  
 
-### a > b
+### b
 - precondition: (a == b) == false
 - True  
 a(true) : 63 < 69 - 5  
